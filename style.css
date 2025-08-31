@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: #3703d5; /* Keep your red, or change it */
+    padding: 60px;        /* Increased padding */
+    width: 400px;         /* Increased width */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    display: inline-block;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px;
+    width: 180px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.stack {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.stack-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 60px;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.empty {
+    color: #aaaaff;
+    font-size: 16px;
+    margin-top: 20px;
+}

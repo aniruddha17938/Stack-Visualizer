@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stack Visualizer</h1>
+        <form method="POST" action="/push">
+            <input type="text" name="value" placeholder="Enter value" required>
+            <button type="submit">Push</button>
+        </form>
+        <form method="POST" action="/pop" style="display:inline;">
+            <button type="submit">Pop</button>
+        </form>
+        <form method="POST" action="/clear" style="display:inline;">
+            <button type="submit">Clear</button>
+        </form>
+
+        <div class="stack">
+            {% for item in stack|reverse %}
+                <div class="stack-item">{{ item }}</div>
+            {% else %}
+                <p class="empty">Stack is empty</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
