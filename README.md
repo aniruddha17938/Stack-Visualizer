@@ -1,2 +1,2 @@
 # Stack-Visualizer
-Python Project 7
+A Flask-based web application that shows different stack operations in a simple and interactive fashion. 
